@@ -1,0 +1,2 @@
+--input INPUT_FILE	--output-recursive OUTPUT_PATH
+gs://imaging-west/b73441c3-364a-4de0-8142-234520c92881/TCGA-BR-4267-01Z-00-DX1.74687868-fdfb-4b11-8c72-a42703b5d06d.svs	gs://imaging-west-dzis/b73441c3-364a-4de0-8142-234520c92881 
