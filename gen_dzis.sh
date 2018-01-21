@@ -2,14 +2,12 @@
 
 date
 dsub \
-    --name run.1 \
+    --preemptible \
+    --name run.4 \
     --project isb-cgc \
-    --logging gs://imaging-west-dzis/perf/run.1/logs \
+    --logging gs://imaging-west-dzis-logging/run.4/ \
     --zones 'us-west1-*' \
-    --image gcr.io/isb-cgc/openslide \
-    --tasks ./notdone.tsv \
-    --command \
-'/usr/.../deepzoom_tile.py \
-  --overlap=06 \
-  --size=256 \
-  
+    --image gcr.io/isb-cgc/deepzoom_tiler \
+    --tasks ./notdone.tsv 1 \
+    --script ./run_tiler.sh
+
