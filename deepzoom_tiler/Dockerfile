@@ -1,4 +1,4 @@
-FROM     ubuntu:14.04
+FROM     debian:stretch
 #FROM gcr.io/google_appengine/base
 MAINTAINER William Clifford "bcliffor@systemsbiology.org"
 
@@ -11,10 +11,12 @@ RUN apt-get -q -y upgrade
 
 RUN apt-get -q -y install curl
 
-RUN apt-get install lsb-release
+RUN apt-get -q -y install lsb-release
+
+RUN apt-get -q -y install gnupg
 
 #Install Cloud SDK
-RUN apt-get remove google-cloud-sdk
+#RUN apt-get remove google-cloud-sdk
 RUN rm -rf /usr/lib/google-cloud-sdk
 RUN echo "deb http://packages.cloud.google.com/apt cloud-sdk-$(lsb_release -c -s) main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -

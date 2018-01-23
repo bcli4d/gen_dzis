@@ -10,7 +10,8 @@ def get_skips():
     with open('skip.tsv') as f:
         skips = f.read().splitlines()
     return skips
-                
+
+'''
 def get_dones():
     dones = get_skips()
     
@@ -23,6 +24,22 @@ def get_dones():
             done = d.split('/')[3]+'/'+d.split('/')[4]
             done = done.rsplit('.',1)[0]
             dones.append(done)
+    return dones    
+'''
+
+def get_dones():
+    dones = get_skips()
+    
+    with open('done.txt','w') as f:
+        call(['gsutil','ls','-d','gs://imaging-west-dzis/*/*_files'],stdout=f)    
+
+    with open('done.txt') as f:
+        done_dzis = f.read().splitlines()
+        for d in done_dzis:
+            done = d.split('/')[3]+'/'+d.split('/')[4]
+            done = done.rsplit('_files',1)[0]
+            dones.append(done)
+    print(dones[0])
     return dones    
     
 def get_slides(slidelist):
