@@ -7,14 +7,14 @@ from subprocess import call
 DEST='gs://imaging-west-dzis/'
 
 def get_skips():
-    with open('skip.tsv') as f:
+    with open('skip.txt') as f:
         skips = f.read().splitlines()
     return skips
 
-'''
+
 def get_dones():
     dones = get_skips()
-    
+#    dones = []
     with open('done.txt','w') as f:
         call(['gsutil','ls','gs://imaging-west-dzis/*/*.dzi'],stdout=f)    
 
@@ -25,8 +25,8 @@ def get_dones():
             done = done.rsplit('.',1)[0]
             dones.append(done)
     return dones    
-'''
 
+'''
 def get_dones():
     dones = get_skips()
     
@@ -41,7 +41,8 @@ def get_dones():
             dones.append(done)
     print(dones[0])
     return dones    
-    
+'''
+
 def get_slides(slidelist):
     with open(slidelist) as f:
         svss = f.read().splitlines()
