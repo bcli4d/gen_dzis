@@ -1,0 +1,18 @@
+dstat --project cgc-05-0003 --jobs 'run-6--bcliffor--180123-052658-82' --status '*' (33-132)
+dstat --project cgc-05-0003 --jobs 'run-6--bcliffor--180123-151107-20' --status '*' (133-1032)
+dstat --project cgc-05-0003 --jobs 'run-1-1000--bcliffor--180124-043750-53' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-2001-3--bcliffor--180125-153555-57' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-3001--bcliffor--180125-183112-03' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-3002--bcliffor--180125-183112-03' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-4006-5--bcliffor--180126-000559-06' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-5006-6--bcliffor--180126-030053-94' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-8006-9--bcliffor--180126-180915-30' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-8006-9--bcliffor--180126-180915-30' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-10006---bcliffor--180126-233739-32' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-1-1000--bcliffor--180127-051858-57' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-1001-1--bcliffor--180127-071028-98' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-1-250--bcliffor--180127-162256-31' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-1-42--bcliffor--180128-004729-04' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-skips--bcliffor--180128-015129-93' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-1-2--bcliffor--180128-171955-67' --status '*'
+dstat --project cgc-05-0003 --jobs 'run-skips---bcliffor--180128-180522-26' --status '*'
